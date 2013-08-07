@@ -1,6 +1,8 @@
 package com.fima.cardsui.objects;
 
+
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -37,6 +39,11 @@ public abstract class Card extends AbstractCard {
 		this.title = title;
 		this.desc = desc;
 		this.image = image;
+	}
+	
+	public Card(String title, Bitmap bp) {
+		this.title = title;
+		this.bp = bp;
 	}
 
 	@Override

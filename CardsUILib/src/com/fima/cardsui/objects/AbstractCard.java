@@ -1,6 +1,8 @@
 package com.fima.cardsui.objects;
 
+
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.view.View;
 
 public abstract class AbstractCard {
@@ -8,6 +10,8 @@ public abstract class AbstractCard {
 	protected String title;
 	
 	protected int image;
+	
+	protected Bitmap bp;
 	
 	protected String desc;
 	
@@ -26,6 +30,9 @@ public abstract class AbstractCard {
 	
 	public int getImage() {
 		return image;
+	}
+	public Bitmap getBitmap() {
+		return bp;
 	}
 	
 }
